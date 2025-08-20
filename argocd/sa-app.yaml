@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/abhinayrimilpurty/service-accounts-rbac.git
     targetRevision: main
-    path: service-accounts-rbac
+    path: sa-charts
     helm:
       valueFiles:
         - values.yaml
