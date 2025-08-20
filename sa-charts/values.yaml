@@ -1,0 +1,30 @@
+namespace: my-app
+
+platformServiceAccount:
+  name: platform-sa
+  create: true
+
+workloadServiceAccount:
+  name: workload-sa
+  create: true
+  automountToken: true
+
+roleBinding:
+  name: workload-rb
+  roleRef:
+    kind: Role
+    name: workload-role
+  subjects:
+    - kind: ServiceAccount
+      name: workload-sa
+      namespace: my-app
+
+clusterRoleBinding:
+  name: platform-crb
+  roleRef:
+    kind: ClusterRole
+    name: cluster-admin
+  subjects:
+    - kind: ServiceAccount
+      name: platform-sa
+      namespace: my-app

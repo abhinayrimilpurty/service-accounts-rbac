@@ -1,0 +1,6 @@
+apiVersion: v2
+name: service-accounts-rbac
+description: Helm chart to manage service accounts and RBAC
+type: application
+version: 0.1.0
+appVersion: "1.0"
