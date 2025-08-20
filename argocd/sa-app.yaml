@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/abhinayrimilpurty/helm-rbac-demo.git
+    repoURL: https://github.com/abhinayrimilpurty/service-accounts-rbac.git
     targetRevision: main
     path: service-accounts-rbac
     helm:
